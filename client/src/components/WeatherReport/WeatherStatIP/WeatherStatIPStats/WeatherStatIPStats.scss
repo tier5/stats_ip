@@ -1,0 +1,10 @@
+.Comp-WeatherStatIPStats.temp-statip-data {
+    transition: all .5s;
+    max-height: 1500px;
+    overflow: hidden;
+
+    &:not(.visible) {
+        max-height: 0;
+        padding-bottom: 0;
+    }
+}

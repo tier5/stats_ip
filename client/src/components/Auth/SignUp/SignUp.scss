@@ -1,0 +1,47 @@
+@import "../../../variables";
+
+.Comp-SignUp {
+  
+  input.error {
+    outline-color: #c1272d;
+    outline-style: auto;
+    outline-offset: -2px;
+  }
+  
+  .nice-select.error {
+    box-shadow: 0px 0px 2px 2px #c1272d;
+  }
+  
+  input.error + label.radiolab:before, .Comp-SignUp input.error + label.checklab:before {
+    box-shadow: 0px 0px 2px 2px #c1272d;
+  }
+  
+  .signinupform .item.newsletter {
+    border-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: -5px;
+  }
+  
+  .signinupwrap {
+    
+    @media #{$width-800-down}{
+      min-height: inherit;
+    }
+    
+    .signinupform {
+      max-width: 100%;
+      
+      .inputs {
+        @media #{$width-800-down}{
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        @media #{$width-600-down}{
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  
+}

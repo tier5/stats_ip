@@ -1,0 +1,255 @@
+/* table header */
+
+.Comp-Table {
+    .maintable {
+        &.fixed {
+            //margin-top: 93px;
+
+            thead tr.tr-header {
+                th {
+                    position: relative;
+                    top: 0;
+                    z-index: 2;
+                }
+            }
+        }
+
+        tr td {
+            padding: 5px 5px;
+            background-color: #fff;
+
+            &.table_name {
+                white-space: nowrap;
+            }
+
+            &.table_team {
+                font-weight: bold;
+            }
+
+            &:before {
+                content: none;
+            }
+
+            &.colhover {
+                background-color: #f8f8f8 !important;
+            }
+
+            &.ordered-by, &.ordered-by-hover {
+                background-color: #fff8f8 !important;
+            }
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fbfbfb;
+        }
+
+        .tr-header {
+            cursor: pointer;
+
+            th {
+                overflow: visible;
+                padding-left: 0;
+                padding-right: 0;
+                border-left: 1px solid #fff;
+
+                > div {
+                    margin: 0;
+                    position: relative;
+                    height: 90px;
+                    line-height: 100px;
+
+                    > span:not(.background) {
+                        position: absolute;
+                        text-align: center;
+                        border-bottom: none;
+                        background: none;
+                        line-height: 1;
+                        width: 80px;
+                        text-transform: uppercase;
+                        top: 50%;
+                        left: 50%;
+                        pointer-events: none;
+                        z-index: 1;
+                    }
+
+                    > span.background {
+                        padding: 0;
+                        transform: translate3d(0, 0, 0) skew(315deg);
+                        transform-origin: left bottom;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        border-bottom: none;
+                        border-left: 2px solid #edf0f5;
+                        border-right: 1px solid #fff;
+                    }
+                }
+
+                &:first-child {
+
+                    &:before {
+                        content: '';
+                        width: 120%;
+                        height: 32%;
+                        left: 95%;
+                        top: 0.75px;
+                        position: absolute;
+                        background: #3a3a3a;
+                    }
+
+                    &:after {
+                        content: '';
+                        left: 2px;
+                        right: 1px;
+                        top: 0.75px;
+                        bottom: 1px;
+                        position: absolute;
+                        background: #3a3a3a;
+                    }
+
+                    > .filler {
+                        content: '';
+                        width: 100%;
+                        height: 30%;
+                        left: 20%;
+                        top: 20%;
+                        bottom: 1px;
+                        position: absolute;
+                        background: #3a3a3a;
+                        transform: none;
+                    }
+
+                    > div > span:not(.background) {
+                        padding-top: 0;
+                    }
+
+                    > div > span.background {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+
+        tr:hover td > *, tr:hover td a > * {
+            color: #c1272d;
+        }
+
+        tr.check-checked td > *, tr.check-checked td a > * {
+            color: #c1272d;
+        }
+
+        .tr-header {
+            /* order icons */
+            th:not(:first-child) > div:before {
+                content: ' ';
+                position: absolute;
+                top: -18px;
+                left: 105px;
+                height: 20px;
+                width: calc(100% - 10px);
+            }
+
+            th.desc > div:before {
+                background: url('../../../resources/basic/images/arrow-sort-desc.png') no-repeat top left, url('../../../resources/basic/images/arrow-sort-desc.png') no-repeat top center, url('../../../resources/basic/images/arrow-sort-desc.png') no-repeat top right;
+            }
+
+            th.asc > div:before {
+                background: url('../../../resources/basic/images/arrow-sort-asc.png') no-repeat top left, url('../../../resources/basic/images/arrow-sort-asc.png') no-repeat top center, url('../../../resources/basic/images/arrow-sort-asc.png') no-repeat top right;
+            }
+
+            th.hover > div:before {
+                background: url('../../../resources/basic/images/arrow-sort-desc.png') no-repeat top left, url('../../../resources/basic/images/arrow-sort-desc.png') no-repeat top center, url('../../../resources/basic/images/arrow-sort-desc.png') no-repeat top right;
+            }
+
+            th.desc.hover > div:before {
+                background: url('../../../resources/basic/images/arrow-sort-asc.png') no-repeat top left, url('../../../resources/basic/images/arrow-sort-asc.png') no-repeat top center, url('../../../resources/basic/images/arrow-sort-asc.png') no-repeat top right;
+            }
+
+            th.asc.hover > div:before {
+                background: none;
+            }
+
+            /* hover + .active background color */
+
+            th.hover:first-child:before, th.active:first-child:before, th.active .filler, th.hover .filler {
+                background: #c1272d;
+            }
+
+            th.hover:first-child:after, th.active:first-child:after {
+                background: #c1272d;
+            }
+
+            th.hover > div > span.background, th.active > div > span.background {
+                background: #c1272d;
+            }
+        }
+
+        /* table checkbox */
+        input[type=checkbox].disabled + label {
+            opacity: .4;
+            cursor: help;
+        }
+
+    }
+
+    /* header spacing */
+
+    .tablewrap {
+        padding-right: 90px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .moredata {
+
+        .buttonwrap_statip {
+            text-align: right;
+            padding-right: 0;
+
+            a {
+                float: none;
+                margin-bottom: 3px;
+
+                &.active {
+                    background-color: #c1272d;
+                }
+            }
+
+        }
+    }
+}
+
+/* body.filters-fixes {
+
+    &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        height: 4px;
+        width: 100%;
+        background: #c1272d;
+    }
+
+    .mainwrap.stat-ip .mainright {
+        margin-left: 250px;
+
+    }
+
+    .Comp-Filters.mainleft {
+        position: fixed;
+        top: 4px;
+        left: 0;
+    }
+
+    .compare-button {
+        position: fixed;
+        top: calc(50% - 90px);
+    }
+
+} */

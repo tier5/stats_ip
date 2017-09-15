@@ -1,0 +1,30 @@
+.search {
+    position: relative;
+
+    .naseptavac {
+        max-height: 35px * 10;
+        overflow-y: auto;
+        border-bottom: 1px solid #e5e5e5;
+        //border-right: 1px solid #e5e5e5;
+
+        a {
+            border-bottom: 1px solid #eaeaea;
+
+            &.selected {
+                background: #f0f0f0;
+            }
+        }
+    }
+
+    .remove {
+        cursor: pointer;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+        font-size: 24px;
+
+        &:hover {
+            color: #c1272d;
+        }
+    }
+}

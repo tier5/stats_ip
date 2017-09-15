@@ -1,0 +1,59 @@
+//Object.keys(teams).map((teamAbbr) => {return teamAbbr + ':  #' + teams[teamAbbr].color + ','}).join('\n')
+$teams: (
+        ARI: #97233F,
+        ATL: #A6192E,
+        BAL: #241773,
+        BUF: #00338D,
+        CAR: #0085CA,
+        CHI: #051C2C,
+        CIN: #FC4C02,
+        CLE: #382F2D,
+        DAL: #003594,
+        DEN: #FC4C02,
+        DET: #0069B1,
+        GNB: #175E33,
+        HOU: #091F2C,
+        IND: #001489,
+        JAX: #D49F12,
+        KAN: #C8102E,
+        LAC: #0C2340,
+        LAR: #002244,
+        MIA: #008E97,
+        MIN: #512D6D,
+        NEW: #0C2340,
+        NOR: #A28D5B,
+        NYG: #001E62,
+        NYJ: #0C371D,
+        OAK: #101820,
+        PHI: #004851,
+        PIT: #FFB81C,
+        SFO: #9B2743,
+        SEA: #001433,
+        TAM: #C8102E,
+        TEN: #0C2340,
+        WAS: #862633,
+);
+
+@each $team, $teamColor in $teams {
+    .teamColor-#{$team} {
+        background: #{$teamColor} !important;
+    }
+}
+
+@each $team, $teamColor in $teams {
+    .teamFontColor-#{$team} span {
+        color: #{$teamColor} !important;
+    }
+
+    .teamFontColor-#{$team} {
+        color: #{$teamColor};
+    }
+}
+
+.Comp-Teams, .Comp-Versus {
+    @each $team, $teamColor in $teams {
+        .team-#{$team}:hover {
+            @extend .teamColor-#{$team};
+        }
+    }
+}

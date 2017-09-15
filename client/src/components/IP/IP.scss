@@ -1,0 +1,17 @@
+.stat-ip {
+    .mainright {
+        height: calc(100vh - 82px);
+        overflow-y: auto;
+        padding-bottom: 0;
+
+        @media screen and ( max-height: 1000px ){
+            height: auto;
+            max-height: 1000px;
+        }
+    }
+
+
+    .compare-button.compare-button_get_premium {
+        padding-right: 50px;
+    }
+}

@@ -1,0 +1,39 @@
+.Comp-WeatherStatIPPlayers {
+
+    .dataheader {
+
+        .Select.react-select {
+            float: left;
+            width: 180px;
+            margin-left: 10px;
+
+            &.is-open {
+                .Select-control {
+                    border-color: #999;
+                }
+            }
+
+            > .Select-control {
+                height: 37px;
+
+                .Select-placeholder, .Select-value {
+                    padding-top: 0;
+                    padding-left: 15px;
+
+                    .Select-value-label {
+                        margin: 0;
+                    }
+                }
+
+                .Select-arrow-zone {
+                    background-color: transparent;
+
+                    .Select-arrow {
+                        border-bottom: 2px solid #407eb9;
+                        border-right: 2px solid #407eb9;
+                    }
+                }
+            }
+        }
+    }
+}

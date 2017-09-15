@@ -1,0 +1,168 @@
+/* table header */
+.Comp-Table {
+  /* header spacing */ }
+  .Comp-Table .maintable {
+    /* table checkbox */ }
+    .Comp-Table .maintable.fixed thead tr.tr-header th {
+      position: relative;
+      top: 0;
+      z-index: 2; }
+    .Comp-Table .maintable tr td {
+      padding: 5px 5px;
+      background-color: #fff; }
+      .Comp-Table .maintable tr td.table_name {
+        white-space: nowrap; }
+      .Comp-Table .maintable tr td.table_team {
+        font-weight: bold; }
+      .Comp-Table .maintable tr td:before {
+        content: none; }
+      .Comp-Table .maintable tr td.colhover {
+        background-color: #f8f8f8 !important; }
+      .Comp-Table .maintable tr td.ordered-by, .Comp-Table .maintable tr td.ordered-by-hover {
+        background-color: #fff8f8 !important; }
+    .Comp-Table .maintable tr:nth-child(even) td {
+      background-color: #fbfbfb; }
+    .Comp-Table .maintable .tr-header {
+      cursor: pointer; }
+      .Comp-Table .maintable .tr-header th {
+        overflow: visible;
+        padding-left: 0;
+        padding-right: 0;
+        border-left: 1px solid #fff; }
+        .Comp-Table .maintable .tr-header th > div {
+          margin: 0;
+          position: relative;
+          height: 90px;
+          line-height: 100px; }
+          .Comp-Table .maintable .tr-header th > div > span:not(.background) {
+            position: absolute;
+            text-align: center;
+            border-bottom: none;
+            background: none;
+            line-height: 1;
+            width: 80px;
+            text-transform: uppercase;
+            top: 50%;
+            left: 50%;
+            pointer-events: none;
+            z-index: 1; }
+          .Comp-Table .maintable .tr-header th > div > span.background {
+            padding: 0;
+            transform: translate3d(0, 0, 0) skew(315deg);
+            transform-origin: left bottom;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-bottom: none;
+            border-left: 2px solid #edf0f5;
+            border-right: 1px solid #fff; }
+        .Comp-Table .maintable .tr-header th:first-child:before {
+          content: '';
+          width: 120%;
+          height: 32%;
+          left: 95%;
+          top: 0.75px;
+          position: absolute;
+          background: #3a3a3a; }
+        .Comp-Table .maintable .tr-header th:first-child:after {
+          content: '';
+          left: 2px;
+          right: 1px;
+          top: 0.75px;
+          bottom: 1px;
+          position: absolute;
+          background: #3a3a3a; }
+        .Comp-Table .maintable .tr-header th:first-child > .filler {
+          content: '';
+          width: 100%;
+          height: 30%;
+          left: 20%;
+          top: 20%;
+          bottom: 1px;
+          position: absolute;
+          background: #3a3a3a;
+          transform: none; }
+        .Comp-Table .maintable .tr-header th:first-child > div > span:not(.background) {
+          padding-top: 0; }
+        .Comp-Table .maintable .tr-header th:first-child > div > span.background {
+          border-left: none; }
+    .Comp-Table .maintable tr:hover td > *, .Comp-Table .maintable tr:hover td a > * {
+      color: #c1272d; }
+    .Comp-Table .maintable tr.check-checked td > *, .Comp-Table .maintable tr.check-checked td a > * {
+      color: #c1272d; }
+    .Comp-Table .maintable .tr-header {
+      /* order icons */
+      /* hover + .active background color */ }
+      .Comp-Table .maintable .tr-header th:not(:first-child) > div:before {
+        content: ' ';
+        position: absolute;
+        top: -18px;
+        left: 105px;
+        height: 20px;
+        width: calc(100% - 10px); }
+      .Comp-Table .maintable .tr-header th.desc > div:before {
+        background: url("../../../resources/basic/images/arrow-sort-desc.png") no-repeat top left, url("../../../resources/basic/images/arrow-sort-desc.png") no-repeat top center, url("../../../resources/basic/images/arrow-sort-desc.png") no-repeat top right; }
+      .Comp-Table .maintable .tr-header th.asc > div:before {
+        background: url("../../../resources/basic/images/arrow-sort-asc.png") no-repeat top left, url("../../../resources/basic/images/arrow-sort-asc.png") no-repeat top center, url("../../../resources/basic/images/arrow-sort-asc.png") no-repeat top right; }
+      .Comp-Table .maintable .tr-header th.hover > div:before {
+        background: url("../../../resources/basic/images/arrow-sort-desc.png") no-repeat top left, url("../../../resources/basic/images/arrow-sort-desc.png") no-repeat top center, url("../../../resources/basic/images/arrow-sort-desc.png") no-repeat top right; }
+      .Comp-Table .maintable .tr-header th.desc.hover > div:before {
+        background: url("../../../resources/basic/images/arrow-sort-asc.png") no-repeat top left, url("../../../resources/basic/images/arrow-sort-asc.png") no-repeat top center, url("../../../resources/basic/images/arrow-sort-asc.png") no-repeat top right; }
+      .Comp-Table .maintable .tr-header th.asc.hover > div:before {
+        background: none; }
+      .Comp-Table .maintable .tr-header th.hover:first-child:before, .Comp-Table .maintable .tr-header th.active:first-child:before, .Comp-Table .maintable .tr-header th.active .filler, .Comp-Table .maintable .tr-header th.hover .filler {
+        background: #c1272d; }
+      .Comp-Table .maintable .tr-header th.hover:first-child:after, .Comp-Table .maintable .tr-header th.active:first-child:after {
+        background: #c1272d; }
+      .Comp-Table .maintable .tr-header th.hover > div > span.background, .Comp-Table .maintable .tr-header th.active > div > span.background {
+        background: #c1272d; }
+    .Comp-Table .maintable input[type=checkbox].disabled + label {
+      opacity: .4;
+      cursor: help; }
+  .Comp-Table .tablewrap {
+    padding-right: 90px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: hidden; }
+  .Comp-Table .moredata .buttonwrap_statip {
+    text-align: right;
+    padding-right: 0; }
+    .Comp-Table .moredata .buttonwrap_statip a {
+      float: none;
+      margin-bottom: 3px; }
+      .Comp-Table .moredata .buttonwrap_statip a.active {
+        background-color: #c1272d; }
+
+/* body.filters-fixes {
+
+    &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        height: 4px;
+        width: 100%;
+        background: #c1272d;
+    }
+
+    .mainwrap.stat-ip .mainright {
+        margin-left: 250px;
+
+    }
+
+    .Comp-Filters.mainleft {
+        position: fixed;
+        top: 4px;
+        left: 0;
+    }
+
+    .compare-button {
+        position: fixed;
+        top: calc(50% - 90px);
+    }
+
+} */

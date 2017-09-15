@@ -1,0 +1,15 @@
+.Comp-DepthMoreData.moredata .buttonwrap {
+  padding: 15px 40px 20px; }
+  .Comp-DepthMoreData.moredata .buttonwrap a {
+    transition: all 0.5s; }
+    .Comp-DepthMoreData.moredata .buttonwrap a:before {
+      transition: all 0.5s; }
+
+.Comp-DepthMoreData.moredata .dataheader {
+  padding-left: 10px; }
+  .Comp-DepthMoreData.moredata .dataheader.message {
+    font-weight: normal;
+    padding-left: 0;
+    text-align: center; }
+  .Comp-DepthMoreData.moredata .dataheader span {
+    float: none; }

@@ -1,0 +1,38 @@
+.Comp-TableHeader h1.ip-header {
+  width: calc(100% - 100px);
+  max-width: none;
+  margin-bottom: 0;
+  margin-top: 25px; }
+
+.Comp-TableHeader a.clear_all {
+  width: 100px;
+  margin-right: 0;
+  margin-top: 45px;
+  float: right;
+  cursor: pointer;
+  text-align: right; }
+
+.nice-select > ul.list > li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative; }
+  .nice-select > ul.list > li .remove {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    right: -1px;
+    width: 30px;
+    color: #fff;
+    text-align: center;
+    background: #c1272d; }
+
+.nice-select > .current {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+  border: none;
+  outline: none; }

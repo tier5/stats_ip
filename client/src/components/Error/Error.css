@@ -1,0 +1,18 @@
+.Comp-Error .container.error-page {
+  width: calc(100vh - 256px);
+  min-height: calc(100vh - 256px);
+  display: flex;
+  align-items: center; }
+  .Comp-Error .container.error-page .error-page-container {
+    padding: 30px; }
+    .Comp-Error .container.error-page .error-page-container header.error-page__header {
+      border: 0; }
+      .Comp-Error .container.error-page .error-page-container header.error-page__header .error-page__header-image {
+        width: 112px;
+        margin-bottom: 25px; }
+      .Comp-Error .container.error-page .error-page-container header.error-page__header .error-page__title {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 31px;
+        text-align: center; }
+    .Comp-Error .container.error-page .error-page-container p {
+      text-align: center; }

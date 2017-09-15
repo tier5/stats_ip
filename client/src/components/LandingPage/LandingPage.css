@@ -1,0 +1,85 @@
+@media only screen and (max-width: 600px) {
+  .hidden-under-600 {
+    display: none; } }
+
+@media only screen and (min-width: 601px) {
+  .visible-under-600 {
+    display: none; } }
+
+.Comp-LandingPage .podhead p {
+  font-size: 26px; }
+
+.Comp-LandingPage .podhead h1 {
+  overflow: inherit;
+  white-space: inherit; }
+
+@media only screen and (max-width: 800px) {
+  .Comp-LandingPage .podhead {
+    padding-top: 100px;
+    padding-bottom: 150px; }
+    .Comp-LandingPage .podhead h1 {
+      font-size: 28px; } }
+
+.Comp-LandingPage .intro_schedule .iframe-yotuube-wrapper {
+  max-width: 900px; }
+  .Comp-LandingPage .intro_schedule .iframe-yotuube-wrapper iframe {
+    width: 100vw;
+    max-width: 100%;
+    height: 56.25vw;
+    max-height: 450px; }
+
+@media only screen and (max-width: 800px) {
+  .Comp-LandingPage .news .news_list .item {
+    display: flex;
+    flex-wrap: wrap; }
+    .Comp-LandingPage .news .news_list .item .imgwrap {
+      flex-basis: 100%; }
+      .Comp-LandingPage .news .news_list .item .imgwrap a {
+        width: 100% !important;
+        height: auto !important; }
+        .Comp-LandingPage .news .news_list .item .imgwrap a img {
+          position: inherit !important;
+          left: 0 !important;
+          transform: none !important;
+          width: 100% !important;
+          height: auto !important;
+          min-width: inherit !important; }
+    .Comp-LandingPage .news .news_list .item .textwrap {
+      flex-basis: 100%; }
+    .Comp-LandingPage .news .news_list .item h3 + p {
+      display: none; } }
+
+.Comp-LandingPage .news .news_list .item .imgwrap a {
+  display: inline-block;
+  height: 128px;
+  width: 209px;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+  .Comp-LandingPage .news .news_list .item .imgwrap a img {
+    height: 100%;
+    min-width: 209px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.Comp-LandingPage .news .news_slider {
+  padding: 30px 40px;
+  box-sizing: border-box; }
+  .Comp-LandingPage .news .news_slider .item .image {
+    position: relative;
+    text-align: center; }
+    .Comp-LandingPage .news .news_slider .item .image img {
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+  .Comp-LandingPage .news .news_slider .item .text {
+    display: flex;
+    align-items: center;
+    height: 80px; }
+    .Comp-LandingPage .news .news_slider .item .text p {
+      display: block;
+      height: auto;
+      width: 100%;
+      margin: 0 5%; }

@@ -1,0 +1,289 @@
+$canvasHeight: 800px;
+$positionTitleHeight: 28px;
+
+div.Comp-GameField {
+
+    &.position_wrap {
+        float: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-header {
+        font-size: 23px;
+        font-weight: bold;
+
+        &.Comp-DefensiveHeader {
+            margin-top: 15px;
+        }
+
+        &.Comp-DefensiveHeader {
+            margin-bottom: 15px;
+        }
+
+        .team {
+            display: inline-block;
+            padding: 0 15px;
+        }
+
+        .teamCoordinator {
+            display: inline-block;
+            padding: 0 15px;
+        }
+    }
+
+    .team--defense .player {
+        background: orange;
+    }
+    .team--offense .player {
+        background: navy;
+    }
+
+    .graphwrap {
+        background: none;
+        flex: 1;
+        display: flex;
+        min-height: calc(100vh - 395px);
+        max-height: calc(100vh - 150px);
+    }
+
+    .canvas {
+        position: relative;
+        width: 100%;
+
+        background: transparent url(../../../resources/basic/images/field-lines.png) center center;
+        background-size: 33.3333% 20%;
+        display: flex;
+        flex-direction: column;
+
+        .team {
+            position: relative;
+            width: 100%;
+            flex: 1;
+
+            &.Comp-DefensePlayers {
+                border-bottom: 2px solid #000;
+            }
+
+            &.Comp-OffensePlayers {
+                border-top: 2px solid #000;
+            }
+            .team__position {
+                position: absolute;
+
+                // TODO
+                width: 130px;
+                margin-left: -65px;
+
+                text-align: center;
+                text-transform: uppercase;
+                .position__players, .position__title {
+                    position: absolute;
+                    width: 100%;
+                }
+                .position__players {
+                    .player {
+                        font-size: 0.6em;
+                        margin-bottom: 1px;
+                        background-color: transparent;
+                        text-transform: none;
+                        font-weight: bold;
+
+                        .injury {
+                            display: inline-block;
+                            vertical-align: middle;
+                            border-radius: 50%;
+                            background-color: #c1272d;
+                            color: white !important;
+                            height: 14px;
+                            line-height: 14px;
+                            text-align: center;
+                            margin-left: 5px;
+                            width: 14px;
+                        }
+                    }
+                }
+                .position__title {
+                    font-weight: bold;
+                    font-size: $positionTitleHeight - 3px;
+                    height: $positionTitleHeight;
+                    line-height: $positionTitleHeight;
+                }
+            }
+            // reverse the order for offense
+            &.team--defense {
+                .position__players {
+                    bottom: $positionTitleHeight;
+                }
+                .position__title {
+                    bottom: 0;
+                }
+            }
+            &.team--offense {
+                .position__players {
+                    top: $positionTitleHeight;
+                }
+                .position__title {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .team--defense {
+        &.defense--4-3 {
+            .position--lde {
+                left: 30%;
+                bottom: 10%;
+            }
+            .position--ldt {
+                left: 45%;
+                bottom: 7%;
+            }
+            .position--rdt {
+                left: 55%;
+                bottom: 7%;
+            }
+            .position--rde {
+                left: 70%;
+                bottom: 10%;
+            }
+            .position--lcb {
+                left: 10%;
+                bottom: 20%;
+            }
+            .position--rcb {
+                left: 90%;
+                bottom: 30%;
+            }
+            .position--wslb {
+                left: 25%;
+                bottom: 50%;
+            }
+            .position--sslb {
+                left: 75%;
+                bottom: 50%;
+            }
+            .position--mlb {
+                left: 50%;
+                bottom: 50%;
+            }
+            .position--ss {
+                left: 40%;
+                bottom: 70%;
+            }
+            .position--fs {
+                left: 70%;
+                bottom: 73%;
+            }
+        }
+        &.defense--3-4 {
+            .position--dt {
+                left: 50%;
+                bottom: 7%;
+            }
+            .position--lde {
+                left: 35%;
+                bottom: 10%;
+            }
+            .position--rde {
+                left: 65%;
+                bottom: 10%;
+            }
+            .position--lolb {
+                left: 23%;
+                bottom: 22%;
+            }
+            .position--rolb {
+                left: 80%;
+                bottom: 20%;
+            }
+            .position--lcb {
+                left: 10%;
+                bottom: 25%;
+            }
+            .position--rcb {
+                left: 90%;
+                bottom: 27%;
+            }
+            .position--lilb {
+                left: 40%;
+                bottom: 47%;
+            }
+            .position--rilb {
+                left: 60%;
+                bottom: 47%;
+            }
+            .position--fs {
+                left: 75%;
+                bottom: 68%;
+            }
+            .position--ss {
+                left: 25%;
+                bottom: 73%;
+            }
+        }
+    }
+
+    .team--offense {
+        &.offense--standard {
+            .position--c {
+                left: 50%;
+                top: 5%;
+            }
+            .position--lg {
+                top: 10%;
+                left: 40%;
+            }
+            .position--lt {
+                top: 10%;
+                left: 30%;
+            }
+            .position--rg {
+                top: 10%;
+                left: 60%;
+            }
+            .position--rt {
+                top: 10%;
+                left: 70%;
+            }
+            .position--qb1 {
+                left: 50%;
+                top: 34%;
+            }
+            .position--wr1 {
+                left: 10%;
+                top: 15%
+            }
+            .position--wr2 {
+                left: 20%;
+                top: 20%;
+            }
+            .position--te {
+                left: 80%;
+                top: 15%;
+            }
+            .position--wr3 {
+                left: 90%;
+                top: 15%;
+            }
+            .position--fb {
+                left: 42%;
+                top: 50%;
+            }
+            .position--rb2 {
+                left: 58%;
+                top: 50%;
+            }
+            .position--k {
+                left: 12%;
+                top: 59%;
+            }
+            .position--p {
+                left: 12%;
+                top: 80%;
+            }
+        }
+    }
+}

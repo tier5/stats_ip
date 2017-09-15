@@ -1,0 +1,68 @@
+.Comp-DepthToggleNavs {
+  flex-direction: column; }
+  .Comp-DepthToggleNavs .toggle {
+    max-height: 0px;
+    transition: all .5s;
+    overflow-y: hidden; }
+    .Comp-DepthToggleNavs .toggle.visible {
+      max-height: 1200px; }
+  .Comp-DepthToggleNavs button.toggle-button {
+    outline: none;
+    float: right;
+    margin: 34px 15px 0 0;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 50px 7px 25px;
+    background: #407eb9;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff; }
+    .Comp-DepthToggleNavs button.toggle-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      right: 25px;
+      width: 12px;
+      height: 7px;
+      background: url(../../resources/basic/images/arrow-down2.png) center center no-repeat; }
+    .Comp-DepthToggleNavs button.toggle-button.clicked {
+      background: none;
+      color: #3a3a3a;
+      border: 1px solid #d1d1d1; }
+      .Comp-DepthToggleNavs button.toggle-button.clicked::before {
+        background: url(../../resources/basic/images/arrow-up.png) center center no-repeat; }
+  .Comp-DepthToggleNavs .buttonwrap {
+    padding: 15px 40px 20px; }
+    .Comp-DepthToggleNavs .buttonwrap a {
+      cursor: pointer;
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 12px 65px 12px 50px;
+      background: #407eb9;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid #fff; }
+      .Comp-DepthToggleNavs .buttonwrap a::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        right: 25px;
+        width: 12px;
+        height: 7px;
+        background: url(../../resources/basic/images/arrow-down2.png) center center no-repeat; }
+      .Comp-DepthToggleNavs .buttonwrap a.clicked {
+        background: none;
+        color: #3a3a3a;
+        margin-top: 10px;
+        border: 1px solid #d1d1d1; }
+        .Comp-DepthToggleNavs .buttonwrap a.clicked::before {
+          background: url(../../resources/basic/images/arrow-up.png) center center no-repeat; }

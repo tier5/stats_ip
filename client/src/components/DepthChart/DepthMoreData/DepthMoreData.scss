@@ -1,0 +1,32 @@
+.Comp-DepthMoreData.moredata {
+    .buttonwrap {
+        padding: 15px 40px 20px;
+
+        a {
+            transition: all 0.5s;
+
+            &:before {
+                transition: all 0.5s;
+            }
+
+            &.clicked {
+
+            }
+        }
+    }
+
+    .dataheader {
+        padding-left: 10px;
+
+        &.message {
+            font-weight: normal;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        span {
+            float: none;
+        }
+    }
+}
+

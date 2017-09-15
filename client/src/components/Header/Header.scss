@@ -1,0 +1,102 @@
+@import "../../variables";
+
+.Comp-Header {
+    @media #{$width-600-down}{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Comp-HeaderLink {
+        display: inline;
+    }
+
+    .logo {
+        @media #{$width-800-down}{
+            display: block;
+            float: none;
+            margin-bottom: 15px;
+        }
+        @media #{$width-600-down}{
+            flex-basis: 100%;
+            margin-bottom: 0;
+        }
+    }
+
+    .topnav {
+
+        @media #{$width-600-down}{
+            //  flex-basis: 75%;
+            flex: 1;
+            text-align: left;
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+        a {
+            @media #{$width-600-down}{
+                float: none;
+                display: block;
+                padding: 0 0 2px;
+                margin-top: 5px;
+            }
+
+            &:first-child {
+                @media #{$width-600-down}{
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .comingSoon {
+            pointer-events: none;
+            color: #757575;
+            position: relative;
+        }
+
+        .comingSoon:before {
+            content: attr(data-comingribbon);
+            position: absolute;
+            display: block;
+            font-size: 10px;
+            top: 0;
+            right: 0;
+            padding: 2px 5px;
+            color: #fff;
+            background: #c1272d;
+
+            @media #{$width-800-down}{
+                top: 10px;
+            }
+
+            @media #{$width-600-down}{
+                top: 0;
+                position: relative;
+                max-width: 63px;
+            }
+        }
+    }
+
+    .rightsec {
+
+        @media #{$width-600-down}{
+            display: flex;
+            flex-basis: 25%;
+            text-align: center;
+            align-items: center;
+        }
+
+        .rightmenuwrap {
+            .hesshow {
+                z-index: 20;
+            }
+        }
+
+        &-lower {
+            flex-basis: 100%;
+
+            a {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

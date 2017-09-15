@@ -1,0 +1,29 @@
+$xs-down: "only screen and (max-width : 767px)";
+$sm-down: "only screen and (max-width : 991px)";
+$md-down: "only screen and (max-width : 1199px)";
+
+$xs-up: "only screen and (min-width : 0px)";
+$sm-up: "only screen and (min-width : 768px)";
+$md-up: "only screen and (min-width : 992px)";
+$lg-up: "only screen and (min-width : 1200px)";
+
+$sm-only: "only screen and (min-width : 768px) and (max-width : 991px)";
+$md-only: "only screen and (min-width : 992px) and (max-width : 1199px)";
+$xs-to-lg-only: "only screen and (min-width : 768px) and (max-width : 1199px)";
+// usage example: @media #{$sm-down}
+
+$width-600-up: "only screen and (min-width : 601px)";
+$width-600-down: "only screen and (max-width : 600px)";
+$width-800-down: "only screen and (max-width : 800px)";
+
+.hidden-under-600 {
+  @media #{$width-600-down}{
+    display: none;
+  }
+}
+
+.visible-under-600 {
+  @media #{$width-600-up}{
+    display: none;
+  }
+}

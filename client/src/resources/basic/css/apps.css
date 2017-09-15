@@ -1,0 +1,30 @@
+/* Seh */
+/*
+<a href="javascript:void(0);" class="seh" data-seh="menu"></a>
+
+<div class="hes" id="menu">
+</div>
+*/
+
+/* Popes */
+/*
+<a href="javascript:void(0);" class="popes-open" data-popid="popid">Registrace</a>  
+
+<div class="popes-content" id="popid">
+  <div class="pop-inner">
+  <a href="javascript:void(0);" class="popes-close"></a>
+    
+  </div>
+</div> 
+*/
+
+.popes-wrap{display: none; background-color: rgba(0, 0, 0, 0.7); position: fixed; width: 100%; height: 100%; z-index: 9999; top: 0;}
+.popes{display: none; position: absolute; top: 15%; left: 50%; background: #fff; transform: translate(-50%,0); z-index: 99999;}
+.popes .popes-close{position: absolute; top: 0; right: 0; width: 39px; height: 39px; background: url('../images/close.png') center center no-repeat; background-size: cover; z-index: 10;}
+.popes-content{display: none;}
+.pop-inner{float: left;}
+
+
+.menuseh{position: relative; float: right; margin: 30px 10px 0 0; background: #1e83d9; width: 50px; height: 50px; z-index: 10;}
+.menuseh:before{position: absolute; top: 15px; right: 10px; bottom: 15px; left: 10px; background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%); content: '';}
+

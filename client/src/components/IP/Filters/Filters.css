@@ -1,0 +1,16 @@
+.mainleft a {
+    cursor: pointer;
+}
+
+.mainleft .navwrap .navcontent_1, .mainleft .navwrap2 .navcontent_2 {
+    display: block;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: transform .3s ease-in-out, opacity .1s ease-in-out;
+}
+
+.mainleft .navwrap.navclicked .navcontent_1, .mainleft .navwrap2.navclicked .navcontent_2 {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform .3s ease-in-out, opacity .1s ease-in-out .2s;
+}

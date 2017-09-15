@@ -1,0 +1,83 @@
+@media only screen and (max-width: 600px) {
+  .hidden-under-600 {
+    display: none; } }
+
+@media only screen and (min-width: 601px) {
+  .visible-under-600 {
+    display: none; } }
+
+@media only screen and (max-width: 600px) {
+  .Comp-Header {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.Comp-Header .Comp-HeaderLink {
+  display: inline; }
+
+@media only screen and (max-width: 800px) {
+  .Comp-Header .logo {
+    display: block;
+    float: none;
+    margin-bottom: 15px; } }
+
+@media only screen and (max-width: 600px) {
+  .Comp-Header .logo {
+    flex-basis: 100%;
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 600px) {
+  .Comp-Header .topnav {
+    flex: 1;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 0; } }
+
+@media only screen and (max-width: 600px) {
+  .Comp-Header .topnav a {
+    float: none;
+    display: block;
+    padding: 0 0 2px;
+    margin-top: 5px; } }
+
+@media only screen and (max-width: 600px) {
+  .Comp-Header .topnav a:first-child {
+    margin-top: 0; } }
+
+.Comp-Header .topnav .comingSoon {
+  pointer-events: none;
+  color: #757575;
+  position: relative; }
+
+.Comp-Header .topnav .comingSoon:before {
+  content: attr(data-comingribbon);
+  position: absolute;
+  display: block;
+  font-size: 10px;
+  top: 0;
+  right: 0;
+  padding: 2px 5px;
+  color: #fff;
+  background: #c1272d; }
+  @media only screen and (max-width: 800px) {
+    .Comp-Header .topnav .comingSoon:before {
+      top: 10px; } }
+  @media only screen and (max-width: 600px) {
+    .Comp-Header .topnav .comingSoon:before {
+      top: 0;
+      position: relative;
+      max-width: 63px; } }
+
+@media only screen and (max-width: 600px) {
+  .Comp-Header .rightsec {
+    display: flex;
+    flex-basis: 25%;
+    text-align: center;
+    align-items: center; } }
+
+.Comp-Header .rightsec .rightmenuwrap .hesshow {
+  z-index: 20; }
+
+.Comp-Header .rightsec-lower {
+  flex-basis: 100%; }
+  .Comp-Header .rightsec-lower a {
+    flex-basis: 100%; }

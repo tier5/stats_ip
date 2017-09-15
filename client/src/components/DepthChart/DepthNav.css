@@ -1,0 +1,13 @@
+.Comp-DepthNav.depth-nav {
+  float: none; }
+  .Comp-DepthNav.depth-nav a {
+    float: none;
+    display: block; }
+    .Comp-DepthNav.depth-nav a:hover:not(.active) {
+      background: #c1272d; }
+    .Comp-DepthNav.depth-nav a.active .switch {
+      float: right;
+      width: 35px;
+      height: 100%;
+      position: relative;
+      left: 30px; }

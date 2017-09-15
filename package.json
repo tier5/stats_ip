@@ -1,0 +1,31 @@
+{
+  "name": "statroute",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"cd client && npm start\"",
+    "build": "cd client && npm run build",
+    "server": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.2",
+    "express-session": "^1.15.5",
+    "hbs": "~4.0.1",
+    "moment": "^2.18.1",
+    "morgan": "~1.8.1",
+    "node-sass-middleware": "0.9.8",
+    "nodemailer": "^4.1.0",
+    "nodemailer-express-handlebars": "^2.0.0",
+    "pg-promise": "^5.9.7",
+    "promise": "^8.0.1",
+    "react-ga": "^2.2.0",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

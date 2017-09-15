@@ -1,0 +1,21 @@
+.compare-popup-enter {
+    opacity: 0.01;
+}
+
+.compare-popup-enter.compare-popup-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.compare-popup-leave {
+    opacity: 1;
+}
+
+.compare-popup-leave.compare-popup-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.popes-content .compare-selected {
+    background: url('../../../resources/basic/images/podhead.jpg') scroll center center no-repeat; background-size: cover;
+}

@@ -1,0 +1,42 @@
+.Comp-WeatherStatIPButton {
+
+    .buttonwrap {
+        padding: 15px 40px 20px;
+
+        a {
+            cursor: pointer;
+            position: relative;
+            font-weight: 500;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 12px 65px 12px 50px;
+            background: #407eb9;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #fff;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                margin-top: -3px;
+                right: 25px;
+                width: 12px;
+                height: 7px;
+                background: url(../../../resources/basic/images/arrow-down2.png) center center no-repeat;
+            }
+
+            &.clicked {
+                background: none;
+                color: #3a3a3a;
+                margin-top: 10px;
+                border: 1px solid #d1d1d1;
+
+                &::before {
+                    background: url(../../../resources/basic/images/arrow-up.png) center center no-repeat;
+                }
+            }
+        }
+    }
+}

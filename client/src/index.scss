@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.tooltip-inner {
+    min-width: 150px;
+}
+
+.selectwrap, .dataheader {
+    min-width: 200px;
+
+    .Select.react-select {
+
+        &.is-open {
+            .Select-control .Select-arrow-zone .Select-arrow {
+                transform: rotate(-135deg);
+            }
+
+            .Select-control {
+                border-color: #999;
+            }
+        }
+
+        > .Select-control {
+            border-radius: 0;
+            height: 42px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: none;
+            border: solid 1px #d1d1d1;
+
+            .Select-placeholder, .Select-value {
+                padding-left: 15px;
+                padding-top: 3px;
+                text-align: left;
+            }
+
+            .Select-arrow-zone {
+                float: none;
+                width: 29px;
+                background-color: #3a3a3a;
+
+                .Select-arrow {
+                    border: 0;
+                    border-bottom: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                    content: '';
+                    display: block;
+                    height: 7px;
+                    margin-top: -4px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    transform-origin: 66% 66%;
+                    transform: rotate(45deg);
+                    width: 7px;
+                }
+            }
+        }
+        .Select-menu-outer {
+            border-radius: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top-color: #e6e6e6;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+            margin-top: -1px;
+            max-height: 200px;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            z-index: 1;
+            -webkit-overflow-scrolling: touch;
+        }
+        .Select-menu {
+            max-height: 198px;
+            overflow-y: auto;
+        }
+        .Select-option {
+            text-align: left;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #c1272d;
+            cursor: pointer;
+            display: block;
+            padding: 10px 15px;
+            border-top: 1px solid #d1d1d1;
+
+            &:last-child {
+                border-radius: 0;
+            }
+
+            &.is-selected {
+                background-color: #f6f6f6;
+                color: #c1272d;
+                font-weight: bold;
+            }
+
+            &.is-focused {
+                background-color: #f6f6f6;
+                color: #c1272d;
+            }
+        }
+
+        // selected/hover/active #f6f6f6
+        // font color #c1272d
+    }
+}

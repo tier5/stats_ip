@@ -1,0 +1,42 @@
+@import "../variables";
+
+@media #{$width-800-down}{
+  footer {
+    .footer {
+      
+      &-logo-wrapper {
+        display: block;
+        width: 100%;
+        
+        .footer-logo {
+          float: none;
+          margin: 5px auto 15px;
+        }
+      }
+      
+      &-socials {
+        display: block;
+        margin-top: 15px;
+        float: left;
+        text-align: center;
+        width: 100%;
+        
+        a {
+          float: none;
+        }
+      }
+    }
+    
+    p {
+      width: 100% !important;
+      text-align: center;
+      display: inline-block;
+      margin-left: 0 !important;
+      
+      a {
+        float: none !important;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Comp-DepthChart {
+    .depth-chart {
+        display: flex;
+
+        .depth-chart-left {
+            float: none;
+
+            h1 {
+                float: none;
+                padding: 30px 0 20px 40px;
+                margin: 0;
+                box-sizing: border-box;
+            }
+        }
+
+        .depth-chart-right {
+            float: none;
+            display: flex;
+            flex-direction: column;
+
+            .depth-selects {
+                float: none;
+            }
+        }
+    }
+}
